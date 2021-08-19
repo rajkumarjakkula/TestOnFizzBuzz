@@ -34,4 +34,27 @@ public class FizzBuzzTest {
         assertEquals(actualValue,expectedValue);
     }
 
+    @Test
+    void  onNumberContainingThreeReturnFizz()
+    {
+        String actualValue = fizzBuzz.FizzOrBuzz(31);
+        String expectedValue = "Fizz";
+        assertEquals(actualValue,expectedValue);
+    }
+
+    @Test
+    void  onNumberContainingFiveReturnFizz()
+    {
+        String actualValue = fizzBuzz.FizzOrBuzz(52);
+        String expectedValue = "Buzz";
+        assertEquals(actualValue,expectedValue);
+    }
+
+    @Test
+    void  onNumberDivisibleByBothThreeAndFiveReturnFizzBuzz()
+    {
+        String actualValue = fizzBuzz.FizzOrBuzz(45);
+        String expectedValue = "FizzBuzz";
+        assertEquals(actualValue,expectedValue);
+    }
 }
